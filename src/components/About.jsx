@@ -1,57 +1,65 @@
-import about from '../assets/about.png'
-import bullet from '../assets/bullet.svg'
+import about1 from '../assets/about1.png'
+import about2 from '../assets/about2.png'
+import about3 from '../assets/about3.png'
+import bullet from '../assets/bullet.png'
 
 const About = () => (
-  <div className='py-20 sm:py-24 md:py-32 sm:mx-0 mx-4'>
-    <div className='container mx-auto h-full flex items-center flex-col md:flex-row'>
-      <div className='md:w-1/2 w-full flex flex-col justify-center md:me-8 me-0 mb-8 md:mb-0'>
-        <div className='self-start mb-4'>
-          <p className='text-primary text-lg capitalize font-medium'>whats netbooks?</p>
-        </div>
+  <div className='py-24'>
+    <div className='container mx-auto grid grid-cols-2 grid-rows-[auto_auto_auto] gap-8'>
+      <div className='grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4 row-start-2'>
+        <p className='text-primary text-lg capitalize font-medium'>whats netbooks?</p>
 
-        <div className='mb-6'>
-          <h2 className='capitalize font-bold text-4xl'>
-            why join <span className='lowercase'>to</span> netbook<br></br>
-            social network?
-          </h2>
+        <h2 className='capitalize font-bold text-4xl'>
+          why join <span className='lowercase'>to</span> netbook<br></br>
+          social network?
+        </h2>
 
-          <p className='text-muted text-lg mt-4'>
-            <span className='capitalize'>recent </span>surveys have indicated that small businesses recognize the need they have to connect with consumer.
-          </p>
-        </div>
+        <p className='text-muted text-lg'>
+          <span className='capitalize'>recent </span>surveys have indicated that small businesses recognize the need they have to connect with consumer.
+        </p>
 
-        <div>
-          <ul>
-            <li className='capitalize flex items-center font-semibold'>
-              <img
-                src={bullet}
-                className='me-2'
-              />
-              groups
-            </li>
-            <li className='capitalize flex items-center font-semibold'>
-              <img
-                src={bullet}
-                className='me-2 my-2'
-              />
-              messages
-            </li>
-            <li className='capitalize flex items-center font-semibold'>
-              <img
-                src={bullet}
-                className='me-2'
-              />
-              share
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li className='capitalize grid grid-cols-[30px_auto] grid-rows-1 items-center font-semibold'>
+            <img
+              src={bullet}
+              className='me-2'
+            />
+            groups
+          </li>
+          <li className='capitalize grid grid-cols-[30px_auto] grid-rows-1 items-center  font-semibold'>
+            <img
+              src={bullet}
+              className='me-2 my-2'
+            />
+            messages
+          </li>
+          <li className='capitalize grid grid-cols-[30px_auto] grid-rows-1 items-center  font-semibold'>
+            <img
+              src={bullet}
+              className='me-2'
+            />
+            share
+          </li>
+        </ul>
       </div>
 
-      <div className='md:w-1/2 w-full'>
+      <div className='row-span-3 grid grid-cols-2 grid-rows-2 gap-4'>
         <img
-          src={about}
+          src={about1}
           alt='about'
-          className='w-full'
+          className='rounded-xl row-span-2 self-center'
+        />
+
+        <img
+          src={about2}
+          alt='about'
+          className='rounded-xl'
+        />
+
+        <img
+          src={about3}
+          alt='about'
+          className='rounded-xl'
         />
       </div>
     </div>

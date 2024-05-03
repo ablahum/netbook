@@ -1,28 +1,45 @@
 const Blog = ({ blogs }) => (
-  <div className='py-20 sm:py-24 md:py-32 sm:mx-0 mx-4'>
-    <div className='container mx-auto h-full'>
-      <div className='mx-auto text-center flex flex-col items-center justify-center mt-8 md:mt-0 mb-8'>
-        <div className='mb-4'>
-          <p className='text-primary text-lg capitalize font-medium'>read our blogs</p>
-        </div>
+  <div className='py-24'>
+    <div className='container mx-auto grid grid-cols-1 grid-rows-[auto_auto] gap-8'>
+      <div className='grid grid-cols-1 grid-rows-2 justify-items-center items-center gap-4'>
+        <p className='text-primary text-lg capitalize font-medium'>read our blogs</p>
 
-        <div>
-          <h2 className='capitalize font-bold text-4xl'>latest news</h2>
-        </div>
+        <h2 className='capitalize font-bold text-4xl'>latest news</h2>
       </div>
 
-      <div className='grid grid-cols-3 grid-rows-1 gap-4'>
+      <div className='grid grid-cols-3 grid-rows-1 gap-8 justify-between'>
         {blogs.map((blog) => (
           <div
             key={blog.title}
-            className='p-6 border-2'
+            className='grid grid-cols-1 grid-rows-[auto_auto_auto] gap-4'
           >
             <img
-              src={blog.title}
-              alt={blog.title}
+              src={blog.image}
+              alt={blog.image}
+              className='rounded-xl shadow-lg'
             />
+            <div className='grid grid-cols-[30px_auto] grid-rows-1 gap-4'>
+              <div className='border-t-2 border-t-orange-400 self-center w-full'></div>
 
-            <h3 className='font-semibold'>{blog.title}</h3>
+              <h3 className='font-semibold'>{blog.title}</h3>
+            </div>
+            <button className='grid grid-cols-[auto_auto] grid-rows-1 gap-4 justify-center items-center capitalize'>
+              continue reading
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-4 h-4'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'
+                />
+              </svg>
+            </button>
           </div>
         ))}
       </div>

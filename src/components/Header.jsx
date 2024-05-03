@@ -41,7 +41,7 @@ const Header = () => (
             <input
               type='search'
               id='default-search'
-              className='w-full p-2 md:ps-9 text-xs border-2 border-transparent border-b-[#E5E5E5] rounded-lg'
+              className='w-full p-2 md:ps-9 text-xs border-2 border-transparent border-b-[#E5E5E5] rounded-xl'
               placeholder='Search Here...'
             />
           </div>

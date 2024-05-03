@@ -2,18 +2,18 @@ import people from '../assets/people.png'
 import github from '../assets/github.png'
 
 const Achievement = () => (
-  <div className='py-20 sm:py-24 md:py-32 sm:mx-0 mx-4'>
-    <div className='container mx-auto h-full flex items-center flex-col md:flex-row'>
-      <div className='flex max-[425px]:flex-col md:w-3/4 w-full'>
-        <div className='shadow-lg rounded-xl p-6 max-[425px]:me-0 max-[425px]:mb-4 me-4'>
-          <div className='flex items-center'>
+  <div className='py-24'>
+    <div className='container mx-auto grid grid-cols-2 grid-rows-[auto_auto_auto] gap-8'>
+      <div className='grid grid-cols-2 grid-rows-1 gap-4 row-start-2'>
+        <div className='shadow-lg rounded-xl p-6 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4'>
+          <div className='grid grid-cols-[30px_auto] grid-rows-1 gap-2 items-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-7 h-7 text-primary me-2'
+              className='w-7 h-7 text-primary'
             >
               <path
                 strokeLinecap='round'
@@ -25,11 +25,10 @@ const Achievement = () => (
             <p className='font-semibold'>4.8 rating</p>
           </div>
 
-          <div className='flex items-center mt-4'>
+          <div className='grid grid-cols-[auto_auto] grid-rows-1 gap-2 items-center'>
             <img
               src={people}
               alt='people'
-              className='me-1'
             />
 
             <p className='capitalize font-medium text-muted'>
@@ -37,9 +36,9 @@ const Achievement = () => (
             </p>
           </div>
 
-          <p className='text-muted my-4'>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+          <p className='text-muted'>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
 
-          <button className='flex items-center capitalize text-primary font-medium'>
+          <button className='grid grid-cols-[auto_auto] grid-rows-1 gap-2 items-center capitalize'>
             join our community
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -47,7 +46,7 @@ const Achievement = () => (
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-4 h-4 ms-2'
+              className='w-4 h-4'
             >
               <path
                 strokeLinecap='round'
@@ -58,15 +57,15 @@ const Achievement = () => (
           </button>
         </div>
 
-        <div className='shadow-lg rounded-xl p-6'>
-          <div className='flex items-center'>
+        <div className='shadow-lg rounded-xl p-6 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4'>
+          <div className='grid grid-cols-[30px_auto] grid-rows-1 gap-2 items-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-7 h-7 text-primary me-2'
+              className='w-7 h-7 text-primary'
             >
               <path
                 strokeLinecap='round'
@@ -78,11 +77,10 @@ const Achievement = () => (
             <p className='font-semibold capitalize'>awwwards</p>
           </div>
 
-          <div className='flex items-center mt-4'>
+          <div className='grid grid-cols-[auto_auto] grid-rows-1 gap-2 items-center'>
             <img
               src={github}
               alt='github'
-              className='me-1'
             />
 
             <p className='capitalize text-muted'>
@@ -90,9 +88,9 @@ const Achievement = () => (
             </p>
           </div>
 
-          <p className='text-muted my-4'>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+          <p className='text-muted'>More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
 
-          <button className='flex items-center capitalize font-medium'>
+          <button className='grid grid-cols-[auto_auto] grid-rows-1 gap-2 items-center capitalize'>
             go to awards
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -100,7 +98,7 @@ const Achievement = () => (
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-4 h-4 ms-2'
+              className='w-4 h-4'
             >
               <path
                 strokeLinecap='round'
@@ -112,40 +110,34 @@ const Achievement = () => (
         </div>
       </div>
 
-      <div className='md:w-1/2 w-full flex flex-col justify-center md:ms-8 ms-0 mt-8 md:mt-0'>
-        <div className='self-start mb-4'>
-          <p className='text-primary text-lg capitalize font-medium'>our achievement</p>
-        </div>
+      <div className='row-span-3 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4 items-center'>
+        <p className='text-primary text-lg capitalize font-medium'>our achievement</p>
 
-        <div className='mb-6'>
-          <h2 className='capitalize font-bold text-4xl'>
-            we are connecting <br></br>you the digital life.
-          </h2>
+        <h2 className='capitalize font-bold text-4xl'>
+          we are connecting <br></br>you the digital life.
+        </h2>
 
-          <p className='text-muted text-lg mt-4'>
-            <span className='capitalize'>recent </span>surveys have indicated that small businesses recognize the need they have to connect with consumer.
-          </p>
-        </div>
+        <p className='text-muted text-lg'>
+          <span className='capitalize'>recent </span>surveys have indicated that small businesses recognize the need they have to connect with consumer.
+        </p>
 
-        <div>
-          <button className='text-white bg-primary drop-shadow-button py-5 px-8 rounded-xl me-4 flex items-center'>
-            Discover me
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={1.5}
-              stroke='currentColor'
-              className='w-4 h-4 ms-2'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'
-              />
-            </svg>
-          </button>
-        </div>
+        <button className='text-white bg-primary drop-shadow-button py-4 px-6 rounded-xl grid grid-cols-[auto_auto] grid-rows-1 items-center justify-self-start gap-4'>
+          Discover me
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='currentColor'
+            className='w-4 h-4'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
