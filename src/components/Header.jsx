@@ -1,9 +1,9 @@
 import logo from '../assets/logo.png'
 
 const Header = () => (
-  <div className='py-2 px-2 sm:px-0'>
+  <div className='py-2 px-2 sm:px-0 sticky top-0 bg-white z-10 shadow-lg'>
     <div className='container mx-auto flex items-center justify-between'>
-      <div className='p-0 sm:p-3'>
+      <div className='p-0 sm:p-3 max-[425px]:hidden'>
         <img
           src={logo}
           alt='logo'
@@ -11,11 +11,11 @@ const Header = () => (
         />
       </div>
 
-      <div className='sm:grow lg:mx-[72px] mx-4'>
+      <div className='sm:grow lg:mx-[72px] mx-4 max-[425px]:mx-0 max-[425px]:me-4'>
         <ul className='flex text-muted text-sm'>
-          <li className='me-4 lg:me-8 capitalize font-bold'>home</li>
-          <li className='me-4 lg:me-8 capitalize'>community</li>
-          <li className='me-4 lg:me-8 capitalize'>blog</li>
+          <li className='me-4 lg:me-8 max-[425px]:me-2 capitalize font-bold'>home</li>
+          <li className='me-4 lg:me-8 max-[425px]:me-2 capitalize'>community</li>
+          <li className='me-4 lg:me-8 max-[425px]:me-2 capitalize'>blog</li>
           <li className='capitalize'>events</li>
         </ul>
       </div>
