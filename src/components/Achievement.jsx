@@ -2,9 +2,9 @@ import people from '../assets/people.png'
 import github from '../assets/github.png'
 
 const Achievement = () => (
-  <div className='py-24'>
-    <div className='container mx-auto grid grid-cols-2 grid-rows-[auto_auto_auto] gap-8'>
-      <div className='grid grid-cols-2 grid-rows-1 gap-4 row-start-2'>
+  <div className='py-16'>
+    <div className='container mx-auto grid md:grid-cols-2 md:grid-rows-[auto_auto_auto] grid-cols-1 grid-rows-[auto_auto] gap-8'>
+      <div className='order-1 grid lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 grid-rows-2 gap-4 md:row-start-2'>
         <div className='shadow-lg rounded-xl p-6 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4'>
           <div className='grid grid-cols-[30px_auto] grid-rows-1 gap-2 items-center'>
             <svg
@@ -110,7 +110,7 @@ const Achievement = () => (
         </div>
       </div>
 
-      <div className='row-span-3 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4 items-center'>
+      <div className='md:row-span-3 grid grid-cols-1 grid-rows-[auto_auto_auto_auto] gap-4 md:text-start md:justify-items-start justify-items-center text-center items-center'>
         <p className='text-primary text-lg capitalize font-medium'>our achievement</p>
 
         <h2 className='capitalize font-bold text-4xl'>
@@ -121,8 +121,8 @@ const Achievement = () => (
           <span className='capitalize'>recent </span>surveys have indicated that small businesses recognize the need they have to connect with consumer.
         </p>
 
-        <button className='text-white bg-primary drop-shadow-button py-4 px-6 rounded-xl grid grid-cols-[auto_auto] grid-rows-1 items-center justify-self-start gap-4'>
-          Discover me
+        <button className='text-white bg-primary drop-shadow-button py-4 px-6 rounded-xl grid grid-cols-[auto_auto] grid-rows-1 items-center md:justify-self-start gap-4 capitalize'>
+          discover me
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'

@@ -1,7 +1,7 @@
 const Features = ({ communities }) => (
-  <div className='py-24'>
+  <div className='py-16'>
     <div className='container mx-auto grid grid-cols-1 grid-rows-[auto_auto] gap-8'>
-      <div className='grid grid-cols-1 grid-rows-[auto_auto_auto] justify-items-center gap-4 items-center'>
+      <div className='grid grid-cols-1 grid-rows-[auto_auto_auto] gap-4 items-center justify-items-center text-center'>
         <p className='text-primary text-lg capitalize font-medium'>our community</p>
 
         <h2 className='capitalize font-bold text-4xl'>community main feature</h2>
@@ -11,7 +11,7 @@ const Features = ({ communities }) => (
         </p>
       </div>
 
-      <div className='grid grid-cols-2 grid-rows-3 gap-4'>
+      <div className='grid md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 gap-4'>
         {communities.map((community) => (
           <div
             key={community.title}
